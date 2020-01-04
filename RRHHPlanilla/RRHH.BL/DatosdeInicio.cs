@@ -55,13 +55,13 @@ namespace RRHH.BL
             //SEGURIDAD
             usuario1.NombUsuario = "admin";
             usuario1.Contrasena = "123";
-            usuario1.Nombre = "Kevin";
-            usuario1.Apellido = "Rivera";
+            usuario1.Nombre = "German";
+            usuario1.Apellido = "Mendoza";
             usuario1.Correo = "prueba1234@gmail.com";
-            usuario1.edad = 22;
+            usuario1.edad = 21;
             usuario1.Foto = null;
             usuario1.FechaInicio = new DateTime(1997, 4, 29);
-            usuario1.Cedula = 0512199700879;
+            usuario1.Cedula = 0;
             usuario1.PrivilegioId = 1;
             contexto.Usuarios.Add(usuario1);
 
@@ -70,13 +70,13 @@ namespace RRHH.BL
             //SEGURIDAD
             usuario2.NombUsuario = "gerente";
             usuario2.Contrasena = "123";
-            usuario2.Nombre = "German";
-            usuario2.Apellido = "No me Acuerdo";
+            usuario2.Nombre = "Kevin";
+            usuario2.Apellido = "Rivera";
             usuario2.Correo = "prueba1234@gmail.com";
-            usuario2.edad = 21;
+            usuario2.edad = 22;
             usuario2.Foto = null;
-            usuario2.FechaInicio = new DateTime(1998, 10, 18);
-            usuario2.Cedula = 0512199700666;
+            usuario2.FechaInicio = new DateTime(1997, 4, 29);
+            usuario2.Cedula = 0512199700879;
             usuario2.PrivilegioId = 2;
             contexto.Usuarios.Add(usuario2);
 

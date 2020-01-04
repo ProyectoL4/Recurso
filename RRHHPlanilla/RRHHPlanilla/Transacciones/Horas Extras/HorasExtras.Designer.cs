@@ -42,6 +42,9 @@
             System.Windows.Forms.Label fechaLabel;
             System.Windows.Forms.Label pagoLabel;
             System.Windows.Forms.Label label3;
+            System.Windows.Forms.Label label4;
+            System.Windows.Forms.Label label5;
+            System.Windows.Forms.Label label6;
             this.listaTrabajadoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listaCargosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listaMetodoPagosBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -76,6 +79,11 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.DiastextBox4 = new System.Windows.Forms.TextBox();
+            this.HorastextBox5 = new System.Windows.Forms.TextBox();
+            this.PorcentajetextBox6 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             cargoIdLabel = new System.Windows.Forms.Label();
             jornadaIdLabel = new System.Windows.Forms.Label();
             metodoPagoIdLabel = new System.Windows.Forms.Label();
@@ -89,6 +97,9 @@
             fechaLabel = new System.Windows.Forms.Label();
             pagoLabel = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.listaTrabajadoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaCargosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaMetodoPagosBindingSource)).BeginInit();
@@ -199,7 +210,7 @@
             // 
             cantidadLabel.AutoSize = true;
             cantidadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            cantidadLabel.Location = new System.Drawing.Point(196, 76);
+            cantidadLabel.Location = new System.Drawing.Point(8, 48);
             cantidadLabel.Name = "cantidadLabel";
             cantidadLabel.Size = new System.Drawing.Size(89, 20);
             cantidadLabel.TabIndex = 59;
@@ -209,7 +220,7 @@
             // 
             fechaLabel.AutoSize = true;
             fechaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            fechaLabel.Location = new System.Drawing.Point(218, 147);
+            fechaLabel.Location = new System.Drawing.Point(30, 119);
             fechaLabel.Name = "fechaLabel";
             fechaLabel.Size = new System.Drawing.Size(66, 20);
             fechaLabel.TabIndex = 61;
@@ -219,7 +230,7 @@
             // 
             pagoLabel.AutoSize = true;
             pagoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            pagoLabel.Location = new System.Drawing.Point(228, 109);
+            pagoLabel.Location = new System.Drawing.Point(40, 81);
             pagoLabel.Name = "pagoLabel";
             pagoLabel.Size = new System.Drawing.Size(57, 20);
             pagoLabel.TabIndex = 65;
@@ -376,7 +387,7 @@
             this.fechaInicioDateTimePicker.Enabled = false;
             this.fechaInicioDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.fechaInicioDateTimePicker.Location = new System.Drawing.Point(316, 217);
-            this.fechaInicioDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fechaInicioDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.fechaInicioDateTimePicker.Name = "fechaInicioDateTimePicker";
             this.fechaInicioDateTimePicker.Size = new System.Drawing.Size(160, 22);
             this.fechaInicioDateTimePicker.TabIndex = 9;
@@ -386,7 +397,7 @@
             this.cedulaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaTrabajadoresBindingSource, "Cedula", true));
             this.cedulaTextBox.Enabled = false;
             this.cedulaTextBox.Location = new System.Drawing.Point(316, 175);
-            this.cedulaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cedulaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.cedulaTextBox.Name = "cedulaTextBox";
             this.cedulaTextBox.Size = new System.Drawing.Size(160, 22);
             this.cedulaTextBox.TabIndex = 8;
@@ -433,6 +444,14 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button6);
+            this.groupBox3.Controls.Add(this.PorcentajetextBox6);
+            this.groupBox3.Controls.Add(this.HorastextBox5);
+            this.groupBox3.Controls.Add(this.DiastextBox4);
+            this.groupBox3.Controls.Add(label6);
+            this.groupBox3.Controls.Add(label5);
+            this.groupBox3.Controls.Add(label4);
+            this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Controls.Add(this.dateTimePicker1);
             this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.textBox1);
@@ -454,16 +473,16 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(317, 143);
+            this.dateTimePicker1.Location = new System.Drawing.Point(129, 115);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(239, 22);
             this.dateTimePicker1.TabIndex = 68;
             // 
             // textBox2
             // 
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(317, 109);
+            this.textBox2.Location = new System.Drawing.Point(129, 81);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(133, 22);
@@ -472,7 +491,7 @@
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(317, 76);
+            this.textBox1.Location = new System.Drawing.Point(129, 48);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(133, 22);
@@ -520,7 +539,7 @@
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::RRHHPlanilla.Properties.Resources.close;
             this.pictureBox1.Location = new System.Drawing.Point(1144, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(44, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -531,7 +550,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(965, 15);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 28);
             this.button4.TabIndex = 57;
@@ -577,6 +596,83 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(300, 22);
             this.textBox3.TabIndex = 69;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(12, 190);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(98, 50);
+            this.button5.TabIndex = 69;
+            this.button5.Text = "Diferente Calculo";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label4.Location = new System.Drawing.Point(398, 48);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(54, 20);
+            label4.TabIndex = 70;
+            label4.Text = "Dias:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label5.Location = new System.Drawing.Point(398, 81);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(118, 20);
+            label5.TabIndex = 71;
+            label5.Text = "Horas al dia:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label6.Location = new System.Drawing.Point(398, 119);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(184, 20);
+            label6.TabIndex = 72;
+            label6.Text = "Porcentaje(decimal):";
+            // 
+            // DiastextBox4
+            // 
+            this.DiastextBox4.Enabled = false;
+            this.DiastextBox4.Location = new System.Drawing.Point(593, 48);
+            this.DiastextBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DiastextBox4.Name = "DiastextBox4";
+            this.DiastextBox4.Size = new System.Drawing.Size(154, 22);
+            this.DiastextBox4.TabIndex = 73;
+            // 
+            // HorastextBox5
+            // 
+            this.HorastextBox5.Enabled = false;
+            this.HorastextBox5.Location = new System.Drawing.Point(593, 81);
+            this.HorastextBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HorastextBox5.Name = "HorastextBox5";
+            this.HorastextBox5.Size = new System.Drawing.Size(154, 22);
+            this.HorastextBox5.TabIndex = 74;
+            // 
+            // PorcentajetextBox6
+            // 
+            this.PorcentajetextBox6.Enabled = false;
+            this.PorcentajetextBox6.Location = new System.Drawing.Point(593, 119);
+            this.PorcentajetextBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PorcentajetextBox6.Name = "PorcentajetextBox6";
+            this.PorcentajetextBox6.Size = new System.Drawing.Size(154, 22);
+            this.PorcentajetextBox6.TabIndex = 75;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(129, 207);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(83, 33);
+            this.button6.TabIndex = 76;
+            this.button6.Text = "Cancelar";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // HorasExtras
             // 
@@ -652,5 +748,10 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox PorcentajetextBox6;
+        private System.Windows.Forms.TextBox HorastextBox5;
+        private System.Windows.Forms.TextBox DiastextBox4;
+        private System.Windows.Forms.Button button6;
     }
 }

@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             this.piccerrar = new System.Windows.Forms.PictureBox();
             this.listaHoraExtrasDataGridView = new System.Windows.Forms.DataGridView();
+            this.listaJornadasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listaHoraExtrasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.listaVacacionesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.listaHoraExtrasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.listaAnticiposBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vacacionesBLBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listaAnticiposBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listaTrabajadoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listaCargosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listaEstadoCivilesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listaMetodoPagosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.listaJornadasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listaSexosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listaExTrabajadoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,15 +50,15 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.piccerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaHoraExtrasDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaVacacionesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaJornadasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaHoraExtrasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaAnticiposBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaVacacionesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacacionesBLBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaAnticiposBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaTrabajadoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaCargosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaEstadoCivilesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaMetodoPagosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaJornadasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaSexosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaExTrabajadoresBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -69,9 +69,10 @@
             this.piccerrar.BackColor = System.Drawing.Color.Transparent;
             this.piccerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.piccerrar.Image = global::RRHHPlanilla.Properties.Resources.close;
-            this.piccerrar.Location = new System.Drawing.Point(461, 11);
+            this.piccerrar.Location = new System.Drawing.Point(713, 14);
+            this.piccerrar.Margin = new System.Windows.Forms.Padding(4);
             this.piccerrar.Name = "piccerrar";
-            this.piccerrar.Size = new System.Drawing.Size(33, 34);
+            this.piccerrar.Size = new System.Drawing.Size(44, 42);
             this.piccerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.piccerrar.TabIndex = 45;
             this.piccerrar.TabStop = false;
@@ -88,21 +89,28 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.listaHoraExtrasDataGridView.DataSource = this.listaHoraExtrasBindingSource;
-            this.listaHoraExtrasDataGridView.Location = new System.Drawing.Point(9, 75);
-            this.listaHoraExtrasDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listaHoraExtrasDataGridView.Location = new System.Drawing.Point(12, 92);
+            this.listaHoraExtrasDataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listaHoraExtrasDataGridView.Name = "listaHoraExtrasDataGridView";
             this.listaHoraExtrasDataGridView.RowTemplate.Height = 24;
-            this.listaHoraExtrasDataGridView.Size = new System.Drawing.Size(484, 243);
+            this.listaHoraExtrasDataGridView.Size = new System.Drawing.Size(746, 332);
             this.listaHoraExtrasDataGridView.TabIndex = 45;
+            // 
+            // listaJornadasBindingSource
+            // 
+            this.listaJornadasBindingSource.DataSource = typeof(RRHH.BL.Jornada);
+            // 
+            // listaHoraExtrasBindingSource
+            // 
+            this.listaHoraExtrasBindingSource.DataSource = typeof(RRHH.BL.HoraExtra);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(160, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(257, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 46);
+            this.label1.Size = new System.Drawing.Size(246, 58);
             this.label1.TabIndex = 46;
             this.label1.Text = "Sistema de Control \r\n     Horas Extras";
             // 
@@ -111,17 +119,13 @@
             this.listaVacacionesBindingSource.DataMember = "ListaVacaciones";
             this.listaVacacionesBindingSource.DataSource = this.vacacionesBLBindingSource;
             // 
-            // listaHoraExtrasBindingSource
+            // vacacionesBLBindingSource
             // 
-            this.listaHoraExtrasBindingSource.DataSource = typeof(RRHH.BL.HoraExtra);
+            this.vacacionesBLBindingSource.DataSource = typeof(RRHH.BL.VacacionesBL);
             // 
             // listaAnticiposBindingSource
             // 
             this.listaAnticiposBindingSource.DataSource = typeof(RRHH.BL.Anticipo);
-            // 
-            // vacacionesBLBindingSource
-            // 
-            this.vacacionesBLBindingSource.DataSource = typeof(RRHH.BL.VacacionesBL);
             // 
             // listaTrabajadoresBindingSource
             // 
@@ -139,10 +143,6 @@
             // 
             this.listaMetodoPagosBindingSource.DataSource = typeof(RRHH.BL.MetodoPago);
             // 
-            // listaJornadasBindingSource
-            // 
-            this.listaJornadasBindingSource.DataSource = typeof(RRHH.BL.Jornada);
-            // 
             // listaSexosBindingSource
             // 
             this.listaSexosBindingSource.DataSource = typeof(RRHH.BL.Sexo);
@@ -156,6 +156,7 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
             this.dataGridViewTextBoxColumn1.HeaderText = "Id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // Nombre
             // 
@@ -183,29 +184,29 @@
             // 
             // ResultadoHoras
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 328);
+            this.ClientSize = new System.Drawing.Size(770, 435);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listaHoraExtrasDataGridView);
             this.Controls.Add(this.piccerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ResultadoHoras";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ResultadoHoras";
             this.Load += new System.EventHandler(this.ResultadoHoras_Load);
             ((System.ComponentModel.ISupportInitialize)(this.piccerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaHoraExtrasDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaVacacionesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaJornadasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaHoraExtrasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaAnticiposBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaVacacionesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vacacionesBLBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaAnticiposBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaTrabajadoresBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaCargosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaEstadoCivilesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaMetodoPagosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listaJornadasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaSexosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaExTrabajadoresBindingSource)).EndInit();
             this.ResumeLayout(false);
