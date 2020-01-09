@@ -105,9 +105,12 @@ namespace RRHH.BL
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
+        public string Apellido { get; set; }
         public int SueldoBruto { get; set; }
         public int Anti { get; set; }
         public DateTime FechaAnticipo { get; set; }
+        public string Cargo { get; set; }
+        public string Jornada { get; set; }
         public int SueldoNeto { get; set; }
         public int TrabajadorId { get; set; }
         public Trabajador Trabajador { get; set; }

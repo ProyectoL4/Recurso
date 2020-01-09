@@ -161,8 +161,6 @@ namespace RRHHPlanilla.Transacciones.Horas_Extras
             f4.Show();
 
         }
-       
-
 
         private void button3_Click_2(object sender, EventArgs e)
         {
@@ -173,7 +171,7 @@ namespace RRHHPlanilla.Transacciones.Horas_Extras
 
             sueldoBruto = Convert.ToInt32(sueldoTextBox.Text);
 
-            if (jornadaIdComboBox.Text == "Diurno" && HorastextBox5.Enabled == false && PorcentajetextBox6.Enabled == false && HorastextBox5.Enabled == false)
+            if (jornadaIdComboBox.Text == "Diurno" && HorastextBox5.Enabled == false && PorcentajetextBox6.Enabled == false && DiastextBox4.Enabled == false)
             {
                 sueldodia = sueldoBruto / 30;
                 sueldohora = sueldodia / 8;
@@ -184,7 +182,7 @@ namespace RRHHPlanilla.Transacciones.Horas_Extras
                 textBox2.Text = Convert.ToString(pago);
             }
             else
-                if (jornadaIdComboBox.Text == "Nocturno" && HorastextBox5.Enabled == false && PorcentajetextBox6.Enabled == false && HorastextBox5.Enabled == false)
+                if (jornadaIdComboBox.Text == "Nocturno" && HorastextBox5.Enabled == false && PorcentajetextBox6.Enabled == false && DiastextBox4.Enabled == false)
                 {
                 sueldodia = sueldoBruto / 30;
                 sueldohora = sueldodia / 8;
@@ -195,7 +193,7 @@ namespace RRHHPlanilla.Transacciones.Horas_Extras
                 textBox2.Text = Convert.ToString(pago);
             }
             else
-                if (jornadaIdComboBox.Text == "Mixto" && HorastextBox5.Enabled == false && PorcentajetextBox6.Enabled == false && HorastextBox5.Enabled == false)
+                if (jornadaIdComboBox.Text == "Mixto" && HorastextBox5.Enabled == false && PorcentajetextBox6.Enabled == false && DiastextBox4.Enabled == false)
             {
                 sueldodia = sueldoBruto / 30;
                 sueldohora = sueldodia / 6;
@@ -206,7 +204,7 @@ namespace RRHHPlanilla.Transacciones.Horas_Extras
                 textBox2.Text = Convert.ToString(pago);
             }
             else
-                if (HorastextBox5.Enabled == true && PorcentajetextBox6.Enabled == true && HorastextBox5.Enabled == true)
+                if (HorastextBox5.Enabled == true && PorcentajetextBox6.Enabled == true && DiastextBox4.Enabled == true)
             {
                 porcentaje = Convert.ToDouble(PorcentajetextBox6.Text);
                 dias = Convert.ToInt32(DiastextBox4.Text);
@@ -258,6 +256,9 @@ namespace RRHHPlanilla.Transacciones.Horas_Extras
             var horaextra = (HoraExtra)listaHoraExtrasBindingSource.Current;
 
             horaextra.Nombre = nombreTextBox.Text;
+            horaextra.Apellido = apellidoTextBox.Text;
+            horaextra.Cargo = cargoIdComboBox.Text;
+            horaextra.Jornada = jornadaIdComboBox.Text;
             horaextra.Cantidad = Convert.ToInt32(textBox1.Text);
             horaextra.Fecha = dateTimePicker1.Value;
             horaextra.Pago = Convert.ToDouble(textBox2.Text);

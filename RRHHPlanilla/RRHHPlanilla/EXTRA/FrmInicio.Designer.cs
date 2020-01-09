@@ -35,36 +35,41 @@
             // 
             // lblinicio
             // 
+            this.lblinicio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblinicio.AutoSize = true;
             this.lblinicio.BackColor = System.Drawing.Color.Transparent;
             this.lblinicio.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblinicio.Font = new System.Drawing.Font("Tahoma", 70F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblinicio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblinicio.Location = new System.Drawing.Point(427, 129);
+            this.lblinicio.Location = new System.Drawing.Point(594, 249);
+            this.lblinicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblinicio.Name = "lblinicio";
-            this.lblinicio.Size = new System.Drawing.Size(492, 226);
+            this.lblinicio.Size = new System.Drawing.Size(613, 282);
             this.lblinicio.TabIndex = 35;
             this.lblinicio.Text = "Recursos\r\nHumanos";
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::RRHHPlanilla.Properties.Resources.logo_rh;
-            this.pictureBox2.Location = new System.Drawing.Point(218, 129);
+            this.pictureBox2.Location = new System.Drawing.Point(315, 249);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(203, 210);
+            this.pictureBox2.Size = new System.Drawing.Size(271, 258);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 36;
             this.pictureBox2.TabStop = false;
             // 
             // FrmInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1827, 922);
             this.Controls.Add(this.lblinicio);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmInicio";
             this.Text = "FrmInicio";
             this.Load += new System.EventHandler(this.FrmInicio_Load);

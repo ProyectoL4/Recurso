@@ -248,7 +248,7 @@ namespace RRHHPlanilla
 
                 listaPlanillasBindingSource.EndEdit();
 
-                if (planillaDetalle != null || planillaDetalle == null)
+                if (planillaDetalle == null)
                 {
                     var trabajadores = _trabajoresBL.ObtenerTrabajadores2(cargo, metodo, jornada);
                     listaTrabajadoresBindingSource.DataSource = trabajadores;
@@ -272,6 +272,7 @@ namespace RRHHPlanilla
                     //listaTrabajadoresBindingSource.DataSource = _cargosBL.ObtenerCargos(trabajador.CargoId);
                 }
             }
+
             if (cargoIdComboBox.SelectedIndex == -1 || jornadaIdComboBox.SelectedIndex == -1 ||
             metodoPagoIdComboBox.SelectedIndex == -1)
             {
@@ -290,6 +291,11 @@ namespace RRHHPlanilla
             toolStripButtonCancelar.Visible = true;
             toolStripButtonCancelar.Enabled = true;
             HabilitarEdicion();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

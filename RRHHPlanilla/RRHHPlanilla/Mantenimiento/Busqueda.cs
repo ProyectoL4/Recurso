@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,18 +32,20 @@ namespace RRHHPlanilla
         private void dvg_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow filas = dataGridView1.Rows[e.RowIndex];
+
             //textBox1.Text = Convert.ToString(filas.Cells[0].Value);
             //textBox2.Text = Convert.ToString(filas.Cells[2].Value);
             //textBox3.Text = Convert.ToString(filas.Cells[3].Value);
+            
         }
 
         private void Busquedas_Load(object sender, EventArgs e)
         {
-            cargoIdComboBox.SelectedItem = null;
             dataGridView1.DataSource = sql.MostrarDatos();
+
             //dataGridView1.DataSource = _cargosBL.ObtenerCargos();
 
-            //DataGridViewColumn Column1 = dataGridView1.Columns[1];
+            //DataGridViewColumn Column1 = dataGridView1.Columns[0];
             //Column1.Visible = false;
 
             //DataGridViewColumn Column8 = dataGridView1.Columns[8];
@@ -63,7 +66,7 @@ namespace RRHHPlanilla
 
         private void textBox4_TextChanged_1(object sender, EventArgs e)
         {
-            
+                   
             if (textBox4.Text != "")
             {
                 cargoIdComboBox.SelectedItem = null;
@@ -107,6 +110,11 @@ namespace RRHHPlanilla
             //}
 
             dataGridView1.DataSource = sql.MostrarDatos();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

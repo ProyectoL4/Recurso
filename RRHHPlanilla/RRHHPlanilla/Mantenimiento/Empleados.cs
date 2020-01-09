@@ -86,19 +86,20 @@ namespace RRHHPlanilla
             if (resultado.Exitoso == true)
             {
                 listaTrabajadoresBindingSource.ResetBindings(false);
-                DeshabilitarHabilitarBotones(true);
                 DialogResult resul = MessageBox.Show("Usuario Guardado", "Exitoso...!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
+                DeshabilitarHabilitarBotones(true);
                 textBox1.Text = "";
                 button3.PerformClick();
-
+                DesabilitarEdicion();
             }
             else
             {
                 MessageBox.Show(resultado.Mensaje);
+                HabilitarEdicion();
             }
 
             listaTrabajadoresBindingNavigatorSaveItem.Enabled = false;
+
         }
 
         //AGREGAR

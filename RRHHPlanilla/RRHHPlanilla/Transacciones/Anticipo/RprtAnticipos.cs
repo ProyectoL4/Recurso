@@ -199,7 +199,10 @@ namespace RRHHPlanilla
             var anticipo = (Anticipo)listaAnticiposBindingSource.Current;
 
             anticipo.Nombre = nombreTextBox.Text;
+            anticipo.Apellido = apellidoTextBox.Text;
+            anticipo.Cargo = cargoIdComboBox.Text;
             anticipo.SueldoBruto = Convert.ToInt32(sueldoTextBox1.Text);
+            anticipo.Jornada = jornadaIdComboBox.Text;
             anticipo.Anti = Convert.ToInt32(textBox1.Text);
             anticipo.FechaAnticipo = dateTimePicker1.Value;
             anticipo.SueldoNeto = Convert.ToInt32(textBox2.Text); 
